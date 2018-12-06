@@ -1,0 +1,102 @@
+/******************************************************************************/
+#main{
+  width: 400px;
+  height: 250px;
+  border: 1px solid #222;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -99px;
+  margin-left: -199px;
+}
+/******************************************************************************/
+#main>.text{
+  padding-top: 15px;
+  /* background-color: green; */
+}
+#main>.text>p{
+  font-family: arial;
+  font-size: 25px;
+  text-align: center;
+  color: #222;
+}
+/******************************************************************************/
+#main>.preloader{
+  position: relative;
+  /* background-color: yellow; */
+  height: 160px;
+}
+/******************************************************************************/
+#main>.preloader>.ball{
+  width: 24px;
+  height: 24px;
+  background-color: #222;
+  border: 1px solid #222;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  margin-top: -12px;
+  margin-left: -12px;
+  animation: bounce 0.5s cubic-bezier(.28,.54,1,1.27) infinite;
+  animation-delay: 0.5s;
+}
+@keyframes bounce{
+  0%{top: 65%; transform: scaleY(0.4) scalex(1.4);}
+  25%{transform: scaleY(1.4) scalex(1.0);}
+  50%{top: 20%; transform: scaleY(0.4) scalex(1.4);}
+  75%{transform: scaleY(1.4) scalex(1.0);}
+  100%{top: 65%; transform: scaleY(0.4) scalex(1.4);}
+}
+/******************************************************************************/
+#main>.preloader>.stair_1,.stair_2,.stair_3,.stair_4{
+  width: 40px;
+  height: 4px;
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  background-color: #222;
+}
+/******************************************************************************/
+#main>.preloader>.stair_1{
+  animation: stair_1 2s linear infinite;
+  opacity: 0;
+}
+@keyframes stair_1{
+  0%{top: 45%; left: 75%; opacity: 0;}
+  50%{top: 70%; left: 45%; opacity: 1;}
+  100%{top: 95%; left: 15%; opacity: 0;}
+}
+/******************************************************************************/
+#main>.preloader>.stair_2{
+  animation: stair_2 2s linear infinite;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+@keyframes stair_2{
+  0%{top: 45%; left: 75%; opacity: 0;}
+  50%{top: 70%; left: 45%; opacity: 1;}
+  100%{top: 95%; left: 15%; opacity: 0;}
+}
+/******************************************************************************/
+#main>.preloader>.stair_3{
+  animation: stair_3 2s linear infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
+@keyframes stair_3{
+  0%{top: 45%; left: 75%; opacity: 0;}
+  50%{top: 70%; left: 45%; opacity: 1;}
+  100%{top: 95%; left: 15%; opacity: 0;}
+}
+/******************************************************************************/
+#main>.preloader>.stair_4{
+  animation: stair_4 2s linear infinite;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+@keyframes stair_4{
+  0%{top: 45%; left: 75%; opacity: 0;}
+  50%{top: 70%; left: 45%; opacity: 1;}
+  100%{top: 95%; left: 15%; opacity: 0;}
+}
